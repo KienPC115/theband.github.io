@@ -1,0 +1,99 @@
+/* làm việc media queries nên dùng với đơn vị em */
+
+/* CSS Mobile and table max-width <= 1023px */
+@media( max-width: 63.9375em ){
+    .place-buy-btn{
+        padding: 15px 16px;
+    }
+
+    #nav .subnav a {
+        padding: 5px 12px;
+    }
+
+    .contact-form .form-control{
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .contact-info {
+        line-height: 2;
+    }
+
+    .form-submit-btn {
+        font-size: 18px;
+    }
+
+    .socials-list a{
+        font-size: 48px;
+        margin:0 8px;
+    }
+
+    #footer .copyright a{
+        padding: 12px 0;
+        display: inline-block;
+    }
+}
+
+/* CSS Mobile max-width < 740*/
+@media(max-width: 46.1875em) {
+
+    .s-mt-8 {
+        margin-top: 8px !important;
+    }
+
+    .s-col-full, .s-full-width {
+        width: 100% !important;
+    }
+
+    #header {
+        overflow: hidden;
+    }
+
+    /* hiện nút mobile-menu */
+    #header .mobile-menu-btn {
+        display: block;
+    }
+
+    /* ẩn nút search ở phần header */
+    #header .search-btn{
+        display: none;
+    }
+
+
+    #nav {
+        display: block;
+    }
+
+    /* trả các option lại thành hàng dọc */
+    #nav > li {
+        display: block;
+    }
+
+    #nav > li:first-child {
+        display: inline-block;
+    }
+
+    #nav .subnav {
+        /* giá trị mặc định */
+        position: initial;
+        background-color: #333;
+
+    }
+
+    #nav li a {
+        padding: 1px 24px;
+    }
+    
+    #nav .subnav a{
+        color: #fff;
+        padding: 5px 41px;
+    }
+
+    #content .member-img {
+        width: 60%;
+    }
+
+    .contact-form{
+        margin-top: 32px;
+    }
+}
